@@ -25,3 +25,8 @@ plotLasso <- function(lambda,
   return(lasso_plot)
 }
 
+plotLassoWrap <- function(lambda) plotLasso(lambda,
+                                            lasso = lasso,
+                                            df_ols = df_ols,
+                                            lambda_seq = lambda_seq)
+
