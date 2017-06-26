@@ -16,7 +16,7 @@ df_ols <- data.frame(bx = b_ols_x, by = b_ols_y)
 
 lambda_seq <- seq(0.05, 2, 0.05)
 lasso <- glmnet(cbind(x1_reg, x2_reg), y, lambda = lambda_seq)
-ridge_seq <- seq(0.05, 100, 0.05)
+ridge_seq <- seq(0.05, 50, 0.05)
 ridge <- glmnet(cbind(x1_reg, x2_reg), y, lambda = ridge_seq, alpha = 0)
 
 source('functions/lassoPlot.R')
