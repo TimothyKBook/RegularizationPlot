@@ -3,11 +3,11 @@ This is a very, very rough work in progress.  The goal of this shiny is to illus
 
 ## TODOS:
 #### :white_check_mark: Establish Shiny UI
-#### :o2: LASSO Plot
+#### :white_check_mark: LASSO Plot
   * :white_check_mark: Create plotting framework
   * :white_check_mark: Produce tuning slider
   * :white_check_mark: Integrate plot into Shiny
-  * :o2: Prettify plot
+  * :white_check_mark: Prettify plot
 
 #### :o2: Ridge Plot
   * :o2: Create plotting framework

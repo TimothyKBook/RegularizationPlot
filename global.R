@@ -13,7 +13,7 @@ b_ols_x <- coef(ols)[2]
 b_ols_y <- coef(ols)[3]
 df_ols <- data.frame(bx = b_ols_x, by = b_ols_y)
 
-lambda_seq <- seq(0.1, 2, 0.1)
+lambda_seq <- seq(0.05, 2, 0.05)
 lasso <- glmnet(cbind(x1_reg, x2_reg), y, lambda = lambda_seq)
 
 source('functions/lassoPlot.R')
