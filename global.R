@@ -19,13 +19,12 @@ lasso <- glmnet(cbind(x1_reg, x2_reg), y, lambda = lambda_seq)
 ridge_seq <- seq(0.05, 50, 0.05)
 ridge <- glmnet(cbind(x1_reg, x2_reg), y, lambda = ridge_seq, alpha = 0)
 
+set.seed(123)
+n_gam <- 20
+x_gam <- runif(n)
+y_gam <- 1 + 0.5 * x_gam * (1 - x) + rnorm(n, 0, 0.03)
+
+
 source('functions/lassoPlot.R')
 source('functions/ridgePlot.R')
-# TODO:
-# source('functions/splinePlot.R')
-
-# Used for debugging:
-# lp <- plotLasso(lambda = 0.4, 
-#           lasso = lasso,
-#           df_ols = df_ols,
-#           lambda_seq = lambda_seq)
+source('functions/smoothPlot.R')

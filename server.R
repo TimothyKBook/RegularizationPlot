@@ -4,4 +4,5 @@ library(shiny)
 shinyServer(function(input, output) {
   output$lassoplot <- renderPlot(plotLassoWrap(input$lambda_lasso))
   output$ridgeplot <- renderPlot(plotRidgeWrap(input$lambda_ridge))
+  output$smoothplot <- renderPlot(plotSmoothWrap(input$gam_spar))
 })

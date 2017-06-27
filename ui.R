@@ -29,7 +29,18 @@ shinyUI(fluidPage(tabsetPanel(
       )
     )
   ),
-  tabPanel('Smoothing Spline', {
-    
-  })
+  tabPanel('Smoothing Spline', 
+    sidebarLayout(
+      sidebarPanel(
+        br(),
+        sliderInput('gam_spar', HTML('<h3>Tuning Parameter (scaled version of &lambda;):</h3>'),
+                    min = 0, max = 1.2, value = 0.5, step = 0.01),
+        br(),
+        withMathJax(helpText("The GAM minimizes: $$\\|\\mathbf{y} - f(\\mathbf{x})\\|^2_2 + \\lambda\\int (f'')^2$$"))
+      ),
+      mainPanel(
+        plotOutput('smoothplot')
+      )
+    )
+  )
 )))

@@ -15,10 +15,11 @@ This is a very, very rough work in progress.  The goal of this shiny is to illus
   * :white_check_mark: Integrate plot into Shiny
   * :white_check_mark: Prettify plot
 
-#### :o2: Spline Plot
-  * :o2: Create plotting framework
-  * :o2: Produce tuning slider
-  * :o2: Integrate plot into Shiny
-  * :o2: Prettify plot
+#### :white_check_mark: Spline Plot
+  * :white_check_mark: Create plotting framework
+  * :white_check_mark: Produce tuning slider
+  * :white_check_mark: Integrate plot into Shiny
+  * :white_check_mark: Prettify plot
 
-#### :o2: Stress test, make sure it's all integrated properly
+#### :white_check_mark: Stress test, make sure it's all integrated properly
+#### :o2: Successful Deployment
