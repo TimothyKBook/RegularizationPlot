@@ -17,4 +17,4 @@ plotSmooth <- function(x, y, spar) {
     theme(aspect.ratio = 1)
 }
 
-plotSmoothWrap <- function(spar) plotSmooth(x = x_gam, y_gam, spar = spar)
+plotSmoothWrap <- function(spar) plotSmooth(x = x_gam, y = y_gam, spar = spar)

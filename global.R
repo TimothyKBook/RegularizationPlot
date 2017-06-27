@@ -21,8 +21,8 @@ ridge <- glmnet(cbind(x1_reg, x2_reg), y, lambda = ridge_seq, alpha = 0)
 
 set.seed(123)
 n_gam <- 20
-x_gam <- runif(n)
-y_gam <- 1 + 0.5 * x_gam * (1 - x) + rnorm(n, 0, 0.03)
+x_gam <- runif(n_gam)
+y_gam <- 1 + 0.5 * x_gam * (1 - x_gam) + rnorm(n_gam, 0, 0.03)
 
 
 source('functions/lassoPlot.R')
