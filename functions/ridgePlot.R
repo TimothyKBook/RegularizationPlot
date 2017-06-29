@@ -19,7 +19,7 @@ plotRidge <- function(lambda,
   ridge_plot <- ggplot(df_ols) + 
     geom_point(aes(x = bx, y = by), size = 3) +
     geom_text(aes(x = bx + 1, y = by + 1, label = lbl), size = 5, hjust = 0.4, fontface = 'bold') +
-    geom_circle(aes(x0 = 0, y0 = 0, r = t_tuning^2), fill = 'navy', alpha = 1/2, color = 'black', size = 1) +
+    geom_circle(aes(x0 = 0, y0 = 0, r = t_tuning^2), fill = '#52B6E8', alpha = 1/2, color = 'black', size = 1) +
     geom_point(data = df_ridge, aes(x = bx, y = by), size = 3, color = 'darkorange') +
     geom_text(data = df_ridge, aes(x = bx - 0.5, y = by, label = lbl), color = 'darkorange', size = 5, hjust = 1, fontface = 'bold') +
     theme_bw() +

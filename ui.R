@@ -6,7 +6,7 @@ shinyUI(fluidPage(tabsetPanel(
       sidebarPanel(
         br(),
         sliderInput('lambda_lasso', HTML('<h3>Tuning Parameter &lambda;:</h3>'),
-                    min = 0.05, max = 2, value = 0.5, step = 0.05),
+                    min = 0, max = 2, value = 0.5, step = 0.05),
         br(),
         withMathJax(helpText("The LASSO minimizes: $$\\|\\mathbf{y - X\\beta}\\|^2_2 + \\lambda\\|\\beta\\|_1$$"))
       ),
@@ -20,7 +20,7 @@ shinyUI(fluidPage(tabsetPanel(
       sidebarPanel(
         br(),
         sliderInput('lambda_ridge', HTML('<h3>Tuning Parameter &lambda;:</h3>'),
-                    min = 0.05, max = 50, value = 5, step = 0.05),
+                    min = 0, max = 50, value = 5, step = 0.05),
         br(),
         withMathJax(helpText("Ridge regression minimizes: $$\\|\\mathbf{y - X\\beta}\\|^2_2 + \\lambda\\|\\beta\\|_2^2$$"))
       ),

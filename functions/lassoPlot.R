@@ -20,11 +20,11 @@ plotLasso <- function(lambda,
     geom_point(aes(x = bx, y = by), size = 3) +
     geom_text(aes(x = bx + 1, y = by + 1, label = lbl), size = 5, hjust = 0.4, fontface = 'bold') +
     geom_polygon(data = df_poly, aes(x, y), 
-                 fill = 'navy', color = 'black', alpha = 1/2, size = 1) +
+                 fill = '#52B6E8', color = 'black', alpha = 1/2, size = 1) +
     geom_point(data = df_lasso, aes(x = bx, y = by), size = 3, color = 'darkorange') +
     geom_text(data = df_lasso, aes(x = bx - 0.5, y = by, label = lbl), color = 'darkorange', size = 5, hjust = 1, fontface = 'bold') +
     theme_bw() +
-    xlim(-9, 9) + ylim(-9, 9) +
+    xlim(-10, 10) + ylim(-10, 10) +
     theme(aspect.ratio = 1) +
     geom_hline(yintercept = 0) +
     geom_vline(xintercept = 0) +
